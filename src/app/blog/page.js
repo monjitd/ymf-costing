@@ -12,6 +12,7 @@ async function getData() {
     //1 endpoint - API ?
     const domain = getDomain()
     const endpoint = `${domain}/api/posts`
+    console.log("endpoint:", endpoint)
     // const res = await fetch(endpoint, {next: {revalidate: 10 }})
     const res = await fetch(endpoint, {cache: 'no-store'})
 
