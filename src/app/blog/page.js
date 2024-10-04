@@ -4,7 +4,7 @@ import getDomain from "@/app/lib/getDomain"
 
 //force-cache
 
-//revalidate: n seconds
+//revalidate: n second
 
 //no-store
 
