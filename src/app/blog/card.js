@@ -15,7 +15,7 @@ export default function BlogCard({title}) {
     if (!title ) {return <div>Empty</div> }
 
     return <div>
-        <h1 onClick={handleClick}>title</h1>
+        <h1 onClick={handleClick}>{title}</h1>
         {count }
     </div>
 }
