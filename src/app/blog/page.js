@@ -1,12 +1,7 @@
 import getDomain from "@/app/lib/getDomain"
 
-//fetch caching options
+import BlogCard from './card'
 
-//force-cache
-
-//revalidate: n second
-
-//no-store
 
 async function getData() {
     //1 endpoint - API ?
@@ -36,8 +31,9 @@ export default async function BlogPage(){
 
     return <main>
         <h1>Hello Monjit</h1>
-        <h2>Posts:</h2>
+        <p>Posts:</p>
         {items && items.map((item, idx)=>{
+                // return <BlogCard title={item.title} key={`post-${idx}`} />
                 return <li key={`post-${idx}`}>{item.title}</li>
             })
         }
