@@ -4,7 +4,7 @@ import { useState } from "react"
 
 
 
-export default function BlogCard({title}) {
+export default function Card({title}) {
     const [count, setCount] = useState(1)
 
     const handleClick = (event) => {
